@@ -1,0 +1,1335 @@
+add:
+{
+	"classname" "logic_relay"
+	"spawnflags" "2"
+	"targetname" "Slowdown"
+	"OnTrigger" "!activatorRunScriptCodeforeach(v,_ in {SetHealth=0}) { EntFireByHandle(self, v, (self.GetHealth() - 1).tostring(), 0.0, null, null); }0-1"
+	"OnTrigger" "!activatorRunScriptCodeforeach(v,_ in {SetHealth=0}) { EntFireByHandle(self, v, (self.GetHealth() + 1).tostring(), 0.0, null, null); }0.02-1"
+}
+
+modify:
+{
+	match:
+	{
+		"classname" "trigger_hurt"
+		"targetname" "fuego_a3"
+	}
+	delete:
+	{
+		"OnStartTouch" "speedModifySpeed1.130-1"
+	}
+	insert:
+	{
+		"OnHurtPlayer" "Slowdown,Trigger,,0,-1"
+		"OnHurtPlayer" "Slowdown,Trigger,,2,-1"	
+		"OnHurtPlayer" "Slowdown,Trigger,,4,-1"	
+		"OnHurtPlayer" "Slowdown,Trigger,,6,-1"	
+		"OnHurtPlayer" "Slowdown,Trigger,,8,-1"	
+	}
+}
+
+modify:
+{
+	match:
+	{
+		"classname" "trigger_hurt"
+		"targetname" "fuego_a2"
+	}
+	delete:
+	{
+		"OnStartTouch" "speedModifySpeed1.130-1"
+	}
+	insert:
+	{
+		"OnHurtPlayer" "Slowdown,Trigger,,0,-1"
+		"OnHurtPlayer" "Slowdown,Trigger,,2,-1"	
+		"OnHurtPlayer" "Slowdown,Trigger,,4,-1"	
+		"OnHurtPlayer" "Slowdown,Trigger,,6,-1"	
+		"OnHurtPlayer" "Slowdown,Trigger,,8,-1"	
+	}
+}
+
+modify:
+{
+	match:
+	{
+		"classname" "trigger_hurt"
+		"targetname" "fuego_a1"
+	}
+	delete:
+	{
+		"OnStartTouch" "speedModifySpeed1.130-1"
+	}
+	insert:
+	{
+		"OnHurtPlayer" "Slowdown,Trigger,,0,-1"
+		"OnHurtPlayer" "Slowdown,Trigger,,2,-1"	
+		"OnHurtPlayer" "Slowdown,Trigger,,4,-1"	
+		"OnHurtPlayer" "Slowdown,Trigger,,6,-1"	
+		"OnHurtPlayer" "Slowdown,Trigger,,8,-1"	
+	}
+}
+
+modify:
+{
+	match:
+	{
+		"classname" "trigger_hurt"
+		"targetname" "rayo_hurt"
+	}
+	delete:
+	{
+		"OnHurtPlayer" "speedModifySpeed11-1"
+		"OnHurtPlayer" "speedModifySpeed0.950.95-1"
+		"OnHurtPlayer" "speedModifySpeed0.90.9-1"
+		"OnHurtPlayer" "speedModifySpeed0.850.85-1"
+		"OnHurtPlayer" "speedModifySpeed0.80.8-1"
+		"OnHurtPlayer" "speedModifySpeed0.750.75-1"
+		"OnHurtPlayer" "speedModifySpeed0.70.7-1"
+		"OnHurtPlayer" "speedModifySpeed0.650.65-1"
+		"OnHurtPlayer" "speedModifySpeed0.60.6-1"
+		"OnHurtPlayer" "speedModifySpeed0.550.55-1"
+		"OnHurtPlayer" "speedModifySpeed0.50.5-1"
+		"OnHurtPlayer" "speedModifySpeed0.450.4-1"
+		"OnHurtPlayer" "speedModifySpeed0.450.3-1"
+		"OnHurtPlayer" "speedModifySpeed0.450.2-1"
+		"OnHurtPlayer" "speedModifySpeed0.450.1-1"
+		"OnHurtPlayer" "speedModifySpeed0.450-1"
+	}
+	insert:
+	{
+		"OnHurtPlayer" "Slowdown,Trigger,,0,-1"	
+	}
+}
+
+modify:
+{
+	match:
+	{
+		"classname" "trigger_hurt"
+		"targetname" "rayo_hurt2"
+	}
+	delete:
+	{
+		"OnHurtPlayer" "speedModifySpeed11-1"
+		"OnHurtPlayer" "speedModifySpeed0.950.95-1"
+		"OnHurtPlayer" "speedModifySpeed0.90.9-1"
+		"OnHurtPlayer" "speedModifySpeed0.850.85-1"
+		"OnHurtPlayer" "speedModifySpeed0.80.8-1"
+		"OnHurtPlayer" "speedModifySpeed0.750.75-1"
+		"OnHurtPlayer" "speedModifySpeed0.70.7-1"
+		"OnHurtPlayer" "speedModifySpeed0.650.65-1"
+		"OnHurtPlayer" "speedModifySpeed0.60.6-1"
+		"OnHurtPlayer" "speedModifySpeed0.550.55-1"
+		"OnHurtPlayer" "speedModifySpeed0.50.5-1"
+		"OnHurtPlayer" "speedModifySpeed0.450.4-1"
+		"OnHurtPlayer" "speedModifySpeed0.450.3-1"
+		"OnHurtPlayer" "speedModifySpeed0.450.2-1"
+		"OnHurtPlayer" "speedModifySpeed0.450.1-1"
+		"OnHurtPlayer" "speedModifySpeed0.450-1"
+	}
+	insert:
+	{
+		"OnHurtPlayer" "Slowdown,Trigger,,0,-1"	
+	}
+}
+
+modify:
+{
+	match:
+	{
+		"classname" "trigger_hurt"
+		"targetname" "rayo_hurt3"
+	}
+	delete:
+	{
+		"OnHurtPlayer" "speedModifySpeed11-1"
+		"OnHurtPlayer" "speedModifySpeed0.950.95-1"
+		"OnHurtPlayer" "speedModifySpeed0.90.9-1"
+		"OnHurtPlayer" "speedModifySpeed0.850.85-1"
+		"OnHurtPlayer" "speedModifySpeed0.80.8-1"
+		"OnHurtPlayer" "speedModifySpeed0.750.75-1"
+		"OnHurtPlayer" "speedModifySpeed0.70.7-1"
+		"OnHurtPlayer" "speedModifySpeed0.650.65-1"
+		"OnHurtPlayer" "speedModifySpeed0.60.6-1"
+		"OnHurtPlayer" "speedModifySpeed0.550.55-1"
+		"OnHurtPlayer" "speedModifySpeed0.50.5-1"
+		"OnHurtPlayer" "speedModifySpeed0.450.4-1"
+		"OnHurtPlayer" "speedModifySpeed0.450.3-1"
+		"OnHurtPlayer" "speedModifySpeed0.450.2-1"
+		"OnHurtPlayer" "speedModifySpeed0.450.1-1"
+		"OnHurtPlayer" "speedModifySpeed0.450-1"
+	}
+	insert:
+	{
+		"OnHurtPlayer" "Slowdown,Trigger,,0,-1"
+	}
+}
+
+modify:
+{
+	match:
+	{
+		"classname" "trigger_hurt"
+		"targetname" "flquem2"
+	}
+	insert:
+	{
+		"OnHurtPlayer" "!activator,IgniteLifeTime,3,0,-1"
+		"OnHurtPlayer" "Slowdown,Trigger,,0,-1"	
+		"OnHurtPlayer" "Slowdown,Trigger,,2,-1"
+	}
+}
+
+modify:
+{
+	match:
+	{
+		"classname" "trigger_hurt"
+		"targetname" "xb_rayo_2"
+	}
+	insert:
+	{
+		"OnHurtPlayer" "Slowdown,Trigger,,0,-1"	
+	}
+}
+
+
+modify:
+{
+	match:
+	{
+		"classname" "trigger_hurt"
+		"targetname" "xb_fuego1"
+	}
+	insert:
+	{
+		"OnHurtPlayer" "!activator,IgniteLifeTime,6,0,-1"
+		"OnHurtPlayer" "Slowdown,Trigger,,0,-1"	
+		"OnHurtPlayer" "Slowdown,Trigger,,2,-1"
+		"OnHurtPlayer" "Slowdown,Trigger,,4,-1"
+		"OnHurtPlayer" "Slowdown,Trigger,,6,-1"
+	}
+}
+
+
+
+modify:
+{
+	match:
+	{
+		"effect_name" "building_explosion"
+	}
+	replace:
+	{
+		"effect_name" "explosion_c4_500"
+	}
+}
+
+modify:
+{
+	match:
+	{
+		"effect_name" "explosion_huge"
+	}
+	replace:
+	{
+		"effect_name" "explosion_c4_500"
+	}
+}
+
+modify:
+{
+    match:
+    {
+        "classname" "trigger_teleport"
+    }
+    insert:
+    {
+        "UseLandmarkAngles" "1"
+    }
+}
+
+modify:
+{
+	match:
+	{
+		"classname" "weapon_elite"
+		"targetname" "magia_ultima"
+	}
+	delete:
+	{
+		"OnPlayerPickup" "ultima_fStop01"
+	}
+	insert:
+	{
+		"OnPlayerPickup" "ultima_fDestroyImmediately01"
+	}
+}
+modify:
+{
+	match:
+	{
+		"classname" "weapon_elite"
+		"targetname" "magia_hielo"
+	}
+	delete:
+	{
+		"OnPlayerPickup" "hielo_fStop01"
+	}
+	insert:
+	{
+		"OnPlayerPickup" "hielo_fDestroyImmediately01"
+	}
+}
+modify:
+{
+	match:
+	{
+		"classname" "weapon_elite"
+		"targetname" "magia_fuego"
+	}
+	delete:
+	{
+		"OnPlayerPickup" "fuego_fStop01"
+	}
+	insert:
+	{
+		"OnPlayerPickup" "fuego_fDestroyImmediately01"
+	}
+}
+modify:
+{
+	match:
+	{
+		"classname" "weapon_elite"
+		"targetname" "magia_viento"
+	}
+	delete:
+	{
+		"OnPlayerPickup" "viento_fStop01"
+	}
+	insert:
+	{
+		"OnPlayerPickup" "viento_fDestroyImmediately01"
+	}
+}
+modify:
+{
+	match:
+	{
+		"classname" "weapon_elite"
+		"targetname" "magia_tierra"
+	}
+	delete:
+	{
+		"OnUser4" "ItemEarthModelStop01"
+		"OnUser4" "ItemEarthModelStart0.151"
+	}
+	insert:
+	{
+		"OnPlayerPickup" "ItemEarthModelDestroyImmediately01"
+		"OnPlayerPickup" "ItemEarthModelStart0.151"
+	}
+}
+
+modify:
+{
+	match:
+	{
+		"classname" "weapon_elite"
+		"targetname" "magia_cura"
+	}
+	delete:
+	{
+		"OnPlayerPickup" "cura2_fStop01"
+	}
+	insert:
+	{
+		"OnPlayerPickup" "cura2_fDestroyImmediately01"
+	}
+}
+modify:
+{
+	match:
+	{
+		"classname" "weapon_elite"
+		"targetname" "magia_rayo"
+	}
+	delete:
+	{
+		"OnPlayerPickup" "electro_fStop01"
+	}
+	insert:
+	{
+		"OnPlayerPickup" "electro_fDestroyImmediately01"
+	}
+}
+modify:
+{
+	match:
+	{
+		"classname" "weapon_elite"
+		"targetname" "magia_gravedad"
+	}
+	delete:
+	{
+		"OnPlayerPickup" "gravedad_fStop01"
+	}
+	insert:
+	{
+		"OnPlayerPickup" "gravedad_fDestroyImmediately01"
+	}
+}
+
+filter:
+{
+	"classname" "point_viewcontrol"
+}
+
+add:
+{
+	"origin" "-7740.25 181.983 -2568"
+	"targetname" "consolaT1"
+	"classname" "game_text"
+	"message" "None"
+	"channel" "3"
+	"color" "0 255 0"
+	"color2" "0 255 0"
+	"effect" "0"
+	"fadein" "0.1"
+	"fadeout" "0.1"
+	"fxtime" "0.25"
+	"holdtime" "2"
+	"spawnflags" "1"
+	"x" ".015"
+	"y" ".44"
+	"OnUser1" "Level_TimerDisable0-1"
+	"OnUser1" "!selfAddOutputmessage s 20 AMITLU GNITSAC0-1"
+	"OnUser1" "!selfDisplay0.01-1"
+	"OnUser1" "!selfAddOutputmessage s 91 AMITLU GNITSAC1-1"
+	"OnUser1" "!selfDisplay1.01-1"
+	"OnUser1" "!selfAddOutputmessage s 81 AMITLU GNITSAC2-1"
+	"OnUser1" "!selfDisplay2.01-1"
+	"OnUser1" "!selfAddOutputmessage s 71 AMITLU GNITSAC3-1"
+	"OnUser1" "!selfDisplay3.01-1"
+	"OnUser1" "!selfAddOutputmessage s 61 AMITLU GNITSAC4-1"
+	"OnUser1" "!selfDisplay4.01-1"
+	"OnUser1" "!selfAddOutputmessage s 51 AMITLU GNITSAC5-1"
+	"OnUser1" "!selfDisplay5.01-1"
+	"OnUser1" "!selfAddOutputmessage s 41 AMITLU GNITSAC6-1"
+	"OnUser1" "!selfDisplay6.01-1"
+	"OnUser1" "!selfAddOutputmessage s 31 AMITLU GNITSAC7-1"
+	"OnUser1" "!selfDisplay7.01-1"
+	"OnUser1" "!selfAddOutputmessage s 21 AMITLU GNITSAC8-1"
+	"OnUser1" "!selfDisplay8.01-1"
+	"OnUser1" "!selfAddOutputmessage s 11 AMITLU GNITSAC9-1"
+	"OnUser1" "!selfDisplay9.01-1"
+	"OnUser1" "!selfAddOutputmessage s 01 AMITLU GNITSAC10-1"
+	"OnUser1" "!selfDisplay10.01-1"
+	"OnUser1" "!selfAddOutputmessage s 9 AMITLU GNITSAC11-1"
+	"OnUser1" "!selfDisplay11.01-1"
+	"OnUser1" "!selfAddOutputmessage s 8 AMITLU GNITSAC12-1"
+	"OnUser1" "!selfDisplay12.01-1"
+	"OnUser1" "!selfAddOutputmessage s 7 AMITLU GNITSAC13-1"
+	"OnUser1" "!selfDisplay13.01-1"
+	"OnUser1" "!selfAddOutputmessage s 6 AMITLU GNITSAC14-1"
+	"OnUser1" "!selfDisplay14.01-1"
+	"OnUser1" "!selfAddOutputmessage s 5 AMITLU GNITSAC15-1"
+	"OnUser1" "!selfDisplay15.01-1"
+	"OnUser1" "!selfAddOutputmessage s 4 AMITLU GNITSAC16-1"
+	"OnUser1" "!selfDisplay16.01-1"
+	"OnUser1" "!selfAddOutputmessage s 3 AMITLU GNITSAC17-1"
+	"OnUser1" "!selfDisplay17.01-1"
+	"OnUser1" "!selfAddOutputmessage s 2 AMITLU GNITSAC18-1"
+	"OnUser1" "!selfDisplay18.01-1"
+	"OnUser1" "!selfAddOutputmessage s 1 AMITLU GNITSAC19-1"
+	"OnUser1" "!selfDisplay19.01-1"
+	"OnUser1" "!selfAddOutputmessage AMITLU DETSAC20-1"
+	"OnUser1" "!selfDisplay20.01-1"
+	"OnUser1" "Level_TimerEnable22.01-1"
+	"OnUser1" "Level_TimerFireTimer22.11-1"
+}
+
+filter:
+{
+	"classname" "trigger_multiple"
+	"targetname" "danyoUlt2"
+	"origin" "-6233.1 -1311 -2004"
+	"hammerid" "3133"
+}
+modify:
+{
+	match:
+	{
+		"origin" "-6235.48 -1296.3 -1986"
+		"targetname" "ultima_relay"
+		"classname" "logic_relay"
+	}
+	delete:
+	{
+		"OnTrigger" "danyoUlt2Enable01"
+		"OnTrigger" "danyoUlt2Disable0.51"
+		"OnTrigger" "bahamutendBreak201"
+	}
+	insert:
+	{
+		"OnTrigger" "consolaT1FireUser101"
+	}
+}
+
+modify:
+{
+	match:
+	{
+		"classname" "trigger_hurt"
+		"targetname" "curacion3"
+		"origin" "-7822.37 222.52 -2538"
+	}
+	delete:
+	{
+		"OnStartTouch" "consolaT2AddOutputmessage IMMORTALITY ENDS IN 5 s1-1"
+		"OnStartTouch" "consolaT2AddOutputmessage IMMORTALITY ENDS IN 4 s2-1"
+		"OnStartTouch" "consolaT2AddOutputmessage IMMORTALITY ENDS IN 3 s3-1"
+		"OnStartTouch" "consolaT2AddOutputmessage IMMORTALITY ENDS IN 2 s4-1"
+		"OnStartTouch" "consolaT2AddOutputmessage IMMORTALITY ENDS IN 1 s5-1"
+		"OnStartTouch" "consolaT2AddOutputmessage YOU ARE MORTAL AGAIN6-1"
+		"OnEndTouch" "consolaT2AddOutputmessage YOU ARE MORTAL AGAIN0-1"
+		"OnStartTouch" "consolaT2AddOutputmessage IMMORTALITY ENDS IN 6 s0-1"
+	}
+	insert:
+	{
+		"OnUser1" "consolaT2AddOutputmessage s 6 NI SDNE YTILATROMMI0-1"
+		"OnUser1" "consolaT2AddOutputmessage s 5 NI SDNE YTILATROMMI1-1"
+		"OnUser1" "consolaT2AddOutputmessage s 4 NI SDNE YTILATROMMI2-1"
+		"OnUser1" "consolaT2AddOutputmessage s 3 NI SDNE YTILATROMMI3-1"
+		"OnUser1" "consolaT2AddOutputmessage s 2 NI SDNE YTILATROMMI4-1"
+		"OnUser1" "consolaT2AddOutputmessage s 1 NI SDNE YTILATROMMI5-1"
+		"OnUser1" "consolaT2AddOutputmessage NIGAG LATROM ERA UOY6-1"
+	}
+}
+modify:
+{
+	match:
+	{
+		"targetname" "magia_cura_t3"
+		"classname" "logic_relay"
+	}
+	insert:
+	{
+		"OnTrigger" "curacion3FireUser10-1"
+	}
+}
+
+modify:
+{
+	match:
+	{
+		"origin" "-10023 1361.65 -1296.38"
+		"targetname" "qumar_baha"
+		"classname" "logic_relay"
+	}
+	delete:
+	{
+		"OnTrigger" "ignite2Ignite0-1"
+	}
+	insert:
+	{
+		"OnTrigger" "BahaIgniteRelayTrigger0-1"
+	}
+}
+
+filter:
+{
+	"origin" "-8132.14 -1613.82 -1296.38"
+	"targetname" "ignite2"
+	"classname" "env_entity_igniter"
+}
+filter:
+{
+	"origin" "-8130.6 -1613.82 -1308"
+	"targetname" "ignite2b"
+	"classname" "env_entity_igniter"
+}
+add:
+{
+	"origin" "-9965.54 1386.18 -1296.38"
+	"targetname" "BahaIgniter"
+	"target" "bahamut"
+	"lifetime" "1.01"
+	"classname" "env_entity_igniter"
+}
+add:
+{
+	"origin" "-10023 1361 -1280"
+	"targetname" "BahaIgniteRelay"
+	"StartDisabled" "0"
+	"spawnflags" "0"
+	"classname" "logic_relay"
+	"OnTrigger" "!selfDisable0-1"
+	"OnTrigger" "BahaIgniterIgnite0-1"
+	"OnTrigger" "BahaIgniterIgnite1-1"
+	"OnTrigger" "BahaIgniterIgnite2-1"
+	"OnTrigger" "BahaIgniterIgnite3-1"
+	"OnTrigger" "BahaIgniterIgnite4-1"
+	"OnTrigger" "BahaIgniterIgnite5-1"
+	"OnTrigger" "BahaIgniterIgnite6-1"
+	"OnTrigger" "BahaIgniterIgnite7-1"
+	"OnTrigger" "BahaIgniterIgnite8-1"
+	"OnTrigger" "BahaIgniterIgnite9-1"
+	"OnTrigger" "BahaIgniterIgnite10-1"
+	"OnTrigger" "BahaIgniterIgnite11-1"
+	"OnTrigger" "BahaIgniterIgnite12-1"
+	"OnTrigger" "BahaIgniterIgnite13-1"
+	"OnTrigger" "BahaIgniterIgnite14-1"
+	"OnTrigger" "BahaIgniterIgnite15-1"
+	"OnTrigger" "BahaIgniterIgnite16-1"
+	"OnTrigger" "BahaIgniterIgnite17-1"
+	"OnTrigger" "BahaIgniterIgnite18-1"
+	"OnTrigger" "BahaIgniterIgnite19-1"
+	"OnTrigger" "!selfEnable20-1"
+}
+
+modify:
+{
+	match:
+	{
+		"origin" "120.921 8991.49 -4728"
+		"targetname" "bahamut_vida"
+		"classname" "math_counter"
+		"hammerid" "2710"
+	}
+	delete:
+	{
+		"OnHitMin" "ignite2bIgnite0-1"
+	}
+	insert:
+	{
+		"OnHitMin" "BahaIgniteRelayCancelPending01"
+		"OnHitMin" "bahamutDisableCollision0.501"
+		"OnHitMin" "bahamutAddOutputDisableBoneFollowers 00.501"
+		"OnHitMin" "Cowbell_CounterKill01"
+		"OnHitMin" "baha_st2Kill11"
+		"OnHitMin" "IceFreezeBahamut_BranchKill01"
+		"OnHitMin" "BahaUltiRedKill01"
+		"OnHitMin" "xb_rayo_2Kill01"
+		"OnHitMin" "xb_rayoStop01"
+		"OnHitMin" "xb_curaKill01"
+	}
+}
+
+add:
+{
+	"origin" "-8889.65 656.65 -2663"
+	"targetname" "IceFreezeBahamut_Branch"
+	"InitialValue" "0"
+	"classname" "logic_branch"
+	"OnTrue" "congelar_bahaTrigger01"
+	"OnTrue" "!selfKill0.011"
+}
+
+modify:
+{
+	match:
+	{
+		"targetname" "magia_hielo_t2"
+		"classname" "logic_relay"
+	}
+	delete:
+	{
+		"OnTrigger" "congelar_bahaTrigger0-1"
+	}
+	insert:
+	{
+		"OnTrigger" "IceFreezeBahamut_BranchTest0-1"
+	}
+}
+modify:
+{
+	match:
+	{
+		"targetname" "magia_hielo_t3"
+		"classname" "logic_relay"
+	}
+	delete:
+	{
+		"OnTrigger" "congelar_bahaTrigger0-1"
+	}
+	insert:
+	{
+		"OnTrigger" "IceFreezeBahamut_BranchTest0-1"
+	}
+}
+
+modify:
+{
+	match:
+	{
+		"targetname" "bahamut_entry"
+		"classname" "logic_relay"
+	}
+	insert:
+	{
+		"OnTrigger" "IceFreezeBahamut_BranchSetValue10-1"
+	}
+}
+
+modify:
+{
+	match:
+	{
+		"targetname" "bah_cast_rand"
+		"classname" "logic_case"
+		"origin" "72.4014 9684 -3848"
+	}
+	delete:
+	{
+		"OnCase07" "bah_cast_ULTIMATrigger0-1"
+	}
+	insert:
+	{
+		"OnCase07" "bah_cast_ULTIMATrigger01"
+	}
+}
+
+modify:
+{
+	match:
+	{
+		"targetname" "bah_cast_ULTIMA"
+		"classname" "logic_relay"
+		"origin" "-8364 9712 -3848"
+	}
+	delete:
+	{
+		"OnTrigger" "ServerCommandsay ** ++ LAEH ESU OT YDAER TEG ** AMITLU GNITSAC SI TUMAHAB !GNINRAW **0-1"
+		"OnTrigger" "cast_Enable20-1"
+		"OnTrigger" "muerteEnable20-1"
+		"OnTrigger" "muerteDisable20.5-1"
+		"OnTrigger" "baha_ultimaFade20-1"
+		"OnTrigger" "sUltimaStartShake0-1"
+		"OnTrigger" "sUltima2StartShake20-1"
+		"OnTrigger" "xb_ultimaStart0-1"
+		"OnTrigger" "xb_ultimaStop20-1"
+		"OnTrigger" "sUlt1PlaySound161"
+		"OnTrigger" "sUlt2PlaySound131"
+		"OnTrigger" "sUlt3PlaySound131"
+		"OnTrigger" "sUlt3PlaySound101"
+		"OnTrigger" "sUlt1PlaySound71"
+		"OnTrigger" "sUlt2PlaySound51"
+		"OnTrigger" "sUlt1PlaySound01"
+		"OnTrigger" "ServerCommandsay ** SDNOCES 01 NI DECCUS LLIW TSAC AMITLU **10-1"
+	}
+	insert:
+	{
+		"OnTrigger" "consolaCommandsay ** ++ LAEH ESU OT YDAER TEG ** AMITLU GNITSAC SI TUMAHAB !GNINRAW **01"
+		"OnTrigger" "cast_Enable201"
+		"OnTrigger" "muerteEnable201"
+		"OnTrigger" "muerteDisable20.51"
+		"OnTrigger" "baha_ultimaFade201"
+		"OnTrigger" "sUltimaStartShake01"
+		"OnTrigger" "sUltima2StartShake201"
+		"OnTrigger" "xb_ultimaStart01"
+		"OnTrigger" "xb_ultimaStop201"
+		"OnTrigger" "sUlt1PlaySound161"
+		"OnTrigger" "sUlt2PlaySound131"
+		"OnTrigger" "sUlt3PlaySound131"
+		"OnTrigger" "sUlt3PlaySound101"
+		"OnTrigger" "sUlt1PlaySound71"
+		"OnTrigger" "sUlt2PlaySound51"
+		"OnTrigger" "sUlt1PlaySound01"
+		"OnTrigger" "consolaCommandsay ** SDNOCES 01 NI DECCUS LLIW TSAC AMITLU **101"
+		"OnTrigger" "!selfAddOutputOnTrigger bah_cast_rand:PickRandom::0:-1201"
+		"OnTrigger" "BahaUltiRedFireUser101"
+	}
+}
+add:
+{
+	"origin" "-7740.25 181.983 -2568"
+	"targetname" "BahaUltiRed"
+	"classname" "game_text"
+	"message" "None"
+	"channel" "0"
+	"color" "255 0 0"
+	"color2" "255 0 0"
+	"effect" "0"
+	"fadein" "0.1"
+	"fadeout" "0.1"
+	"fxtime" "0.25"
+	"holdtime" "2"
+	"spawnflags" "1"
+	"x" ".015"
+	"y" ".54"
+	"OnUser1" "!selfAddOutputmessage s 20 AMITLU GNITSAC0-1"
+	"OnUser1" "!selfDisplay0.01-1"
+	"OnUser1" "!selfAddOutputmessage s 91 AMITLU GNITSAC1-1"
+	"OnUser1" "!selfDisplay1.01-1"
+	"OnUser1" "!selfAddOutputmessage s 81 AMITLU GNITSAC2-1"
+	"OnUser1" "!selfDisplay2.01-1"
+	"OnUser1" "!selfAddOutputmessage s 71 AMITLU GNITSAC3-1"
+	"OnUser1" "!selfDisplay3.01-1"
+	"OnUser1" "!selfAddOutputmessage s 61 AMITLU GNITSAC4-1"
+	"OnUser1" "!selfDisplay4.01-1"
+	"OnUser1" "!selfAddOutputmessage s 51 AMITLU GNITSAC5-1"
+	"OnUser1" "!selfDisplay5.01-1"
+	"OnUser1" "!selfAddOutputmessage s 41 AMITLU GNITSAC6-1"
+	"OnUser1" "!selfDisplay6.01-1"
+	"OnUser1" "!selfAddOutputmessage s 31 AMITLU GNITSAC7-1"
+	"OnUser1" "!selfDisplay7.01-1"
+	"OnUser1" "!selfAddOutputmessage s 21 AMITLU GNITSAC8-1"
+	"OnUser1" "!selfDisplay8.01-1"
+	"OnUser1" "!selfAddOutputmessage s 11 AMITLU GNITSAC9-1"
+	"OnUser1" "!selfDisplay9.01-1"
+	"OnUser1" "!selfAddOutputmessage s 01 AMITLU GNITSAC10-1"
+	"OnUser1" "!selfDisplay10.01-1"
+	"OnUser1" "!selfAddOutputmessage s 9 AMITLU GNITSAC11-1"
+	"OnUser1" "!selfDisplay11.01-1"
+	"OnUser1" "!selfAddOutputmessage s 8 AMITLU GNITSAC12-1"
+	"OnUser1" "!selfDisplay12.01-1"
+	"OnUser1" "!selfAddOutputmessage s 7 AMITLU GNITSAC13-1"
+	"OnUser1" "!selfDisplay13.01-1"
+	"OnUser1" "!selfAddOutputmessage s 6 AMITLU GNITSAC14-1"
+	"OnUser1" "!selfDisplay14.01-1"
+	"OnUser1" "!selfAddOutputmessage s 5 AMITLU GNITSAC15-1"
+	"OnUser1" "!selfDisplay15.01-1"
+	"OnUser1" "!selfAddOutputmessage s 4 AMITLU GNITSAC16-1"
+	"OnUser1" "!selfDisplay16.01-1"
+	"OnUser1" "!selfAddOutputmessage s 3 AMITLU GNITSAC17-1"
+	"OnUser1" "!selfDisplay17.01-1"
+	"OnUser1" "!selfAddOutputmessage s 2 AMITLU GNITSAC18-1"
+	"OnUser1" "!selfDisplay18.01-1"
+	"OnUser1" "!selfAddOutputmessage s 1 AMITLU GNITSAC19-1"
+	"OnUser1" "!selfDisplay19.01-1"
+	"OnUser1" "!selfAddOutputmessage AMITLU DETSAC20-1"
+	"OnUser1" "!selfDisplay20.01-1"
+}
+
+
+modify:
+{
+	match:
+	{
+		"targetname" "puerta_1x"
+		"classname" "trigger_once"
+		"origin" "1568.4 8250 220"
+	}
+	delete:
+	{
+		"OnStartTouch" "consolaCommandsay ** DOOR OPENS IN 35 S ** Go to the control room and try to open it earlier **4-1"
+		"OnStartTouch" "lag_fixTrigger4-1"
+	}
+	insert:
+	{
+		"OnStartTouch" "consolaCommandsay ** S 53 NI SNEPO ROOD **44"
+	}
+}
+
+
+modify:
+{
+	match:
+	{
+		"targetname" "puertas_1"
+		"classname" "func_door"
+	}
+	insert:
+	{
+		"OnOpen" "consolaCommandsay ** reilrae ti nepo ot yrt dna moor lortnoc eht ot oG **01"				
+	}
+}
+
+
+modify:
+{
+	match:
+	{
+		"classname" "logic_auto"
+		"origin" "-7417.65 -3277.08 35.6155"
+		"hammerid" "1650"
+	}
+	insert:
+	{
+		"OnNewGame" "cancion_1PlaySound3-1"
+		"OnNewGame" "consolaCommandmp_freezetime 00-1"
+		"OnNewGame" "consolaCommandsv_turbophysics 10-1"
+		"OnNewGame" "consolaCommandmp_roundtime 90-1"
+		"OnNewGame" "player,SetDamageFilter,,0,1"
+		"OnNewGame" "playerAddOutputmax_health 10031"
+		"OnNewGame" "maptoneSetAutoExposureMax10-1"
+		"OnNewGame" "maptoneSetAutoExposureMin0.80-1"
+		"OnNewGame" "maptoneSetBloomScale10-1"
+		"OnNewGame" "cura2_fDestroyImmediately101"
+		"OnNewGame" "fuego_fDestroyImmediately101"
+		"OnNewGame" "gravedad_fDestroyImmediately101"
+		"OnNewGame" "hielo_fDestroyImmediately101"
+		"OnNewGame" "tierra_fDestroyImmediately101"
+		"OnNewGame" "ultima_fDestroyImmediately101"
+		"OnNewGame" "viento_fDestroyImmediately101"
+		"OnNewGame" "electro_fDestroyImmediately101"
+		"OnNewGame" "cura2_fStart121"
+		"OnNewGame" "fuego_fStart121"
+		"OnNewGame" "gravedad_fStart121"
+		"OnNewGame" "hielo_fStart121"
+		"OnNewGame" "tierra_fStart121"
+		"OnNewGame" "ultima_fStart121"
+		"OnNewGame" "viento_fStart121"
+		"OnNewGame" "electro_fStart121"
+	}
+}
+
+
+filter:
+{
+	"origin" "-7545.15 -796.758 33"
+	"targetname" "consolaCli"
+	"classname" "point_clientcommand"
+	"hammerid" "2918"
+}
+
+
+modify:
+{
+	match:
+	{
+		"targetname" "huida_m"
+		"classname" "logic_relay"
+	}
+	insert:
+	{
+		"OnTrigger" "BombTimer2FireUser101"
+	}
+}
+modify:
+{
+	match:
+	{
+		"targetname" "huida_d"
+		"classname" "logic_relay"
+	}
+	insert:
+	{
+		"OnTrigger" "BombTimer2FireUser301"
+	}
+}
+modify:
+{
+	match:
+	{
+		"targetname" "huida_e"
+		"classname" "logic_relay"
+	}
+	insert:
+	{
+		"OnTrigger" "BombTimer2FireUser201"
+	}
+}
+
+add:
+{
+	"origin" "-7740.25 181.983 -2568"
+	"targetname" "BombTimer2"
+	"classname" "game_text"
+	"message" "BOMB TIMER"
+	"channel" "0"
+	"color" "255 0 255"
+	"color2" "0 0 0"
+	"effect" "0"
+	"fadein" "1"
+	"fadeout" "3"
+	"fxtime" "0.25"
+	"holdtime" "2"
+	"spawnflags" "1"
+	"x" "-1"
+	"y" ".11"
+	"OnUser1" "!selfSetTexts52 m2 :REMIT BMOB0-1"
+	"OnUser1" "!selfDisplay0.01-1"
+	"OnUser1" "!selfSetTexts42 m2 :REMIT BMOB1-1"
+	"OnUser1" "!selfDisplay1.01-1"
+	"OnUser1" "!selfSetTexts32 m2 :REMIT BMOB2-1"
+	"OnUser1" "!selfDisplay2.01-1"
+	"OnUser1" "!selfSetTexts22 m2 :REMIT BMOB3-1"
+	"OnUser1" "!selfDisplay3.01-1"
+	"OnUser1" "!selfSetTexts12 m2 :REMIT BMOB4-1"
+	"OnUser1" "!selfDisplay4.01-1"
+	"OnUser1" "!selfSetTexts02 m2 :REMIT BMOB5-1"
+	"OnUser1" "!selfDisplay5.01-1"
+	"OnUser1" "!selfSetTexts91 m2 :REMIT BMOB6-1"
+	"OnUser1" "!selfDisplay6.01-1"
+	"OnUser1" "!selfSetTexts81 m2 :REMIT BMOB7-1"
+	"OnUser1" "!selfDisplay7.01-1"
+	"OnUser1" "!selfSetTexts71 m2 :REMIT BMOB8-1"
+	"OnUser1" "!selfDisplay8.01-1"
+	"OnUser1" "!selfSetTexts61 m2 :REMIT BMOB9-1"
+	"OnUser1" "!selfDisplay9.01-1"
+	"OnUser1" "!selfSetTexts51 m2 :REMIT BMOB10-1"
+	"OnUser1" "!selfDisplay10.01-1"
+	"OnUser1" "!selfSetTexts41 m2 :REMIT BMOB11-1"
+	"OnUser1" "!selfDisplay11.01-1"
+	"OnUser1" "!selfSetTexts31 m2 :REMIT BMOB12-1"
+	"OnUser1" "!selfDisplay12.01-1"
+	"OnUser1" "!selfSetTexts21 m2 :REMIT BMOB13-1"
+	"OnUser1" "!selfDisplay13.01-1"
+	"OnUser1" "!selfSetTexts11 m2 :REMIT BMOB14-1"
+	"OnUser1" "!selfDisplay14.01-1"
+	"OnUser1" "!selfFireUser215-1"
+	
+	"OnUser2" "!selfSetTexts01 m2 :REMIT BMOB0-1"
+	"OnUser2" "!selfDisplay0.01-1"
+	"OnUser2" "!selfSetTexts09 m2 :REMIT BMOB1-1"
+	"OnUser2" "!selfDisplay1.01-1"
+	"OnUser2" "!selfSetTexts08 m2 :REMIT BMOB2-1"
+	"OnUser2" "!selfDisplay2.01-1"
+	"OnUser2" "!selfSetTexts07 m2 :REMIT BMOB3-1"
+	"OnUser2" "!selfDisplay3.01-1"
+	"OnUser2" "!selfSetTexts06 m2 :REMIT BMOB4-1"
+	"OnUser2" "!selfDisplay4.01-1"
+	"OnUser2" "!selfSetTexts05 m2 :REMIT BMOB5-1"
+	"OnUser2" "!selfDisplay5.01-1"
+	"OnUser2" "!selfSetTexts04 m2 :REMIT BMOB6-1"
+	"OnUser2" "!selfDisplay6.01-1"
+	"OnUser2" "!selfSetTexts03 m2 :REMIT BMOB7-1"
+	"OnUser2" "!selfDisplay7.01-1"
+	"OnUser2" "!selfSetTexts02 m2 :REMIT BMOB8-1"
+	"OnUser2" "!selfDisplay8.01-1"
+	"OnUser2" "!selfSetTexts01 m2 :REMIT BMOB9-1"
+	"OnUser2" "!selfDisplay9.01-1"
+	"OnUser2" "!selfFireUser310-1"
+
+	"OnUser3" "!selfSetTexts00 m2 :REMIT BMOB0-1"
+	"OnUser3" "!selfDisplay0.01-1"
+	"OnUser3" "!selfSetTexts95 m1 :REMIT BMOB1-1"
+	"OnUser3" "!selfDisplay1.01-1"
+	"OnUser3" "!selfSetTexts85 m1 :REMIT BMOB2-1"
+	"OnUser3" "!selfDisplay2.01-1"
+	"OnUser3" "!selfSetTexts75 m1 :REMIT BMOB3-1"
+	"OnUser3" "!selfDisplay3.01-1"
+	"OnUser3" "!selfSetTexts65 m1 :REMIT BMOB4-1"
+	"OnUser3" "!selfDisplay4.01-1"
+	"OnUser3" "!selfSetTexts55 m1 :REMIT BMOB5-1"
+	"OnUser3" "!selfDisplay5.01-1"
+	"OnUser3" "!selfSetTexts45 m1 :REMIT BMOB6-1"
+	"OnUser3" "!selfDisplay6.01-1"
+	"OnUser3" "!selfSetTexts35 m1 :REMIT BMOB7-1"
+	"OnUser3" "!selfDisplay7.01-1"
+	"OnUser3" "!selfSetTexts25 m1 :REMIT BMOB8-1"
+	"OnUser3" "!selfDisplay8.01-1"
+	"OnUser3" "!selfSetTexts15 m1 :REMIT BMOB9-1"
+	"OnUser3" "!selfDisplay9.01-1"
+	"OnUser3" "!selfSetTexts05 m1 :REMIT BMOB10-1"
+	"OnUser3" "!selfDisplay10.01-1"
+	"OnUser3" "!selfSetTexts94 m1 :REMIT BMOB11-1"
+	"OnUser3" "!selfDisplay11.01-1"
+	"OnUser3" "!selfSetTexts84 m1 :REMIT BMOB12-1"
+	"OnUser3" "!selfDisplay12.01-1"
+	"OnUser3" "!selfSetTexts74 m1 :REMIT BMOB13-1"
+	"OnUser3" "!selfDisplay13.01-1"
+	"OnUser3" "!selfSetTexts64 m1 :REMIT BMOB14-1"
+	"OnUser3" "!selfDisplay14.01-1"
+	"OnUser3" "!selfSetTexts54 m1 :REMIT BMOB15-1"
+	"OnUser3" "!selfDisplay15.01-1"
+	"OnUser3" "!selfSetTexts44 m1 :REMIT BMOB16-1"
+	"OnUser3" "!selfDisplay16.01-1"
+	"OnUser3" "!selfSetTexts34 m1 :REMIT BMOB17-1"
+	"OnUser3" "!selfDisplay17.01-1"
+	"OnUser3" "!selfSetTexts24 m1 :REMIT BMOB18-1"
+	"OnUser3" "!selfDisplay18.01-1"
+	"OnUser3" "!selfSetTexts14 m1 :REMIT BMOB19-1"
+	"OnUser3" "!selfDisplay19.01-1"
+	"OnUser3" "!selfSetTexts04 m1 :REMIT BMOB20-1"
+	"OnUser3" "!selfDisplay20.01-1"
+	"OnUser3" "!selfSetTexts95 m1 :REMIT BMOB21-1"
+	"OnUser3" "!selfDisplay21.01-1"
+	"OnUser3" "!selfSetTexts93 m1 :REMIT BMOB22-1"
+	"OnUser3" "!selfDisplay22.01-1"
+	"OnUser3" "!selfSetTexts83 m1 :REMIT BMOB23-1"
+	"OnUser3" "!selfDisplay23.01-1"
+	"OnUser3" "!selfSetTexts73 m1 :REMIT BMOB24-1"
+	"OnUser3" "!selfDisplay24.01-1"
+	"OnUser3" "!selfSetTexts63 m1 :REMIT BMOB25-1"
+	"OnUser3" "!selfDisplay25.01-1"
+	"OnUser3" "!selfSetTexts53 m1 :REMIT BMOB26-1"
+	"OnUser3" "!selfDisplay26.01-1"
+	"OnUser3" "!selfSetTexts43 m1 :REMIT BMOB27-1"
+	"OnUser3" "!selfDisplay27.01-1"
+	"OnUser3" "!selfSetTexts33 m1 :REMIT BMOB28-1"
+	"OnUser3" "!selfDisplay28.01-1"
+	"OnUser3" "!selfSetTexts23 m1 :REMIT BMOB29-1"
+	"OnUser3" "!selfDisplay29.01-1"
+	"OnUser3" "!selfSetTexts13 m1 :REMIT BMOB30-1"
+	"OnUser3" "!selfDisplay30.01-1"
+	"OnUser3" "!selfSetTexts03 m1 :REMIT BMOB31-1"
+	"OnUser3" "!selfDisplay31.01-1"
+	"OnUser3" "!selfSetTexts92 m1 :REMIT BMOB32-1"
+	"OnUser3" "!selfDisplay32.01-1"
+	"OnUser3" "!selfSetTexts82 m1 :REMIT BMOB33-1"
+	"OnUser3" "!selfDisplay33.01-1"
+	"OnUser3" "!selfSetTexts72 m1 :REMIT BMOB34-1"
+	"OnUser3" "!selfDisplay34.01-1"
+	"OnUser3" "!selfSetTexts62 m1 :REMIT BMOB35-1"
+	"OnUser3" "!selfDisplay35.01-1"
+	"OnUser3" "!selfSetTexts52 m1 :REMIT BMOB36-1"
+	"OnUser3" "!selfDisplay36.01-1"
+	"OnUser3" "!selfSetTexts42 m1 :REMIT BMOB37-1"
+	"OnUser3" "!selfDisplay37.01-1"
+	"OnUser3" "!selfSetTexts32 m1 :REMIT BMOB38-1"
+	"OnUser3" "!selfDisplay38.01-1"
+	"OnUser3" "!selfSetTexts22 m1 :REMIT BMOB39-1"
+	"OnUser3" "!selfDisplay39.01-1"
+	"OnUser3" "!selfSetTexts12 m1 :REMIT BMOB40-1"
+	"OnUser3" "!selfDisplay40.01-1"
+	"OnUser3" "!selfSetTexts02 m1 :REMIT BMOB41-1"
+	"OnUser3" "!selfDisplay41.01-1"
+	"OnUser3" "!selfSetTexts91 m1 :REMIT BMOB42-1"
+	"OnUser3" "!selfDisplay42.01-1"
+	"OnUser3" "!selfSetTexts81 m1 :REMIT BMOB43-1"
+	"OnUser3" "!selfDisplay43.01-1"
+	"OnUser3" "!selfSetTexts71 m1 :REMIT BMOB44-1"
+	"OnUser3" "!selfDisplay44.01-1"
+	"OnUser3" "!selfSetTexts61 m1 :REMIT BMOB45-1"
+	"OnUser3" "!selfDisplay45.01-1"
+	"OnUser3" "!selfSetTexts51 m1 :REMIT BMOB46-1"
+	"OnUser3" "!selfDisplay46.01-1"
+	"OnUser3" "!selfSetTexts31 m1 :REMIT BMOB47-1"
+	"OnUser3" "!selfDisplay47.01-1"
+	"OnUser3" "!selfSetTexts21 m1 :REMIT BMOB48-1"
+	"OnUser3" "!selfDisplay48.01-1"
+	"OnUser3" "!selfSetTexts11 m1 :REMIT BMOB49-1"
+	"OnUser3" "!selfDisplay49.01-1"
+	"OnUser3" "!selfSetTexts01 m1 :REMIT BMOB50-1"
+	"OnUser3" "!selfDisplay50.01-1"
+	"OnUser3" "!selfSetTexts09 m1 :REMIT BMOB51-1"
+	"OnUser3" "!selfDisplay51.01-1"
+	"OnUser3" "!selfSetTexts08 m1 :REMIT BMOB52-1"
+	"OnUser3" "!selfDisplay52.01-1"
+	"OnUser3" "!selfSetTexts07 m1 :REMIT BMOB53-1"
+	"OnUser3" "!selfDisplay53.01-1"
+	"OnUser3" "!selfSetTexts06 m1 :REMIT BMOB54-1"
+	"OnUser3" "!selfDisplay54.01-1"
+	"OnUser3" "!selfSetTexts05 m1 :REMIT BMOB55-1"
+	"OnUser3" "!selfDisplay55.01-1"
+	"OnUser3" "!selfSetTexts04 m1 :REMIT BMOB56-1"
+	"OnUser3" "!selfDisplay56.01-1"
+	"OnUser3" "!selfSetTexts03 m1 :REMIT BMOB57-1"
+	"OnUser3" "!selfDisplay57.01-1"
+	"OnUser3" "!selfSetTexts02 m1 :REMIT BMOB58-1"
+	"OnUser3" "!selfDisplay58.01-1"
+	"OnUser3" "!selfSetTexts01 m1 :REMIT BMOB59-1"
+	"OnUser3" "!selfDisplay59.01-1"
+	"OnUser3" "!selfSetTexts00 m1 :REMIT BMOB60-1"
+	"OnUser3" "!selfDisplay60.01-1"
+	"OnUser3" "!selfSetTexts95 m0 :REMIT BMOB61-1"
+	"OnUser3" "!selfDisplay61.01-1"
+	"OnUser3" "!selfSetTexts85 m0 :REMIT BMOB62-1"
+	"OnUser3" "!selfDisplay62.01-1"
+	"OnUser3" "!selfSetTexts75 m0 :REMIT BMOB63-1"
+	"OnUser3" "!selfDisplay63.01-1"
+	"OnUser3" "!selfSetTexts65 m0 :REMIT BMOB64-1"
+	"OnUser3" "!selfDisplay64.01-1"
+	"OnUser3" "!selfSetTexts55 m0 :REMIT BMOB65-1"
+	"OnUser3" "!selfDisplay65.01-1"
+	"OnUser3" "!selfSetTexts45 m0 :REMIT BMOB66-1"
+	"OnUser3" "!selfDisplay66.01-1"
+	"OnUser3" "!selfSetTexts35 m0 :REMIT BMOB67-1"
+	"OnUser3" "!selfDisplay67.01-1"
+	"OnUser3" "!selfSetTexts25 m0 :REMIT BMOB68-1"
+	"OnUser3" "!selfDisplay68.01-1"
+	"OnUser3" "!selfSetTexts15 m0 :REMIT BMOB69-1"
+	"OnUser3" "!selfDisplay69.01-1"
+	"OnUser3" "!selfSetTexts05 m0 :REMIT BMOB70-1"
+	"OnUser3" "!selfDisplay70.01-1"
+	"OnUser3" "!selfSetTexts94 m0 :REMIT BMOB71-1"
+	"OnUser3" "!selfDisplay71.01-1"
+	"OnUser3" "!selfSetTexts84 m0 :REMIT BMOB72-1"
+	"OnUser3" "!selfDisplay72.01-1"
+	"OnUser3" "!selfSetTexts74 m0 :REMIT BMOB73-1"
+	"OnUser3" "!selfDisplay73.01-1"
+	"OnUser3" "!selfSetTexts64 m0 :REMIT BMOB74-1"
+	"OnUser3" "!selfDisplay74.01-1"
+	"OnUser3" "!selfSetTexts54 m0 :REMIT BMOB75-1"
+	"OnUser3" "!selfDisplay75.01-1"
+	"OnUser3" "!selfSetTexts44 m0 :REMIT BMOB76-1"
+	"OnUser3" "!selfDisplay76.01-1"
+	"OnUser3" "!selfSetTexts34 m0 :REMIT BMOB77-1"
+	"OnUser3" "!selfDisplay77.01-1"
+	"OnUser3" "!selfSetTexts24 m0 :REMIT BMOB78-1"
+	"OnUser3" "!selfDisplay78.01-1"
+	"OnUser3" "!selfSetTexts14 m0 :REMIT BMOB79-1"
+	"OnUser3" "!selfDisplay79.01-1"
+	"OnUser3" "!selfSetTexts04 m0 :REMIT BMOB80-1"
+	"OnUser3" "!selfDisplay80.01-1"
+	"OnUser3" "!selfSetTexts93 m0 :REMIT BMOB81-1"
+	"OnUser3" "!selfDisplay81.01-1"
+	"OnUser3" "!selfSetTexts83 m0 :REMIT BMOB82-1"
+	"OnUser3" "!selfDisplay82.01-1"
+	"OnUser3" "!selfSetTexts73 m0 :REMIT BMOB83-1"
+	"OnUser3" "!selfDisplay83.01-1"
+	"OnUser3" "!selfSetTexts63 m0 :REMIT BMOB84-1"
+	"OnUser3" "!selfDisplay84.01-1"
+	"OnUser3" "!selfSetTexts53 m0 :REMIT BMOB85-1"
+	"OnUser3" "!selfDisplay85.01-1"
+	"OnUser3" "!selfSetTexts43 m0 :REMIT BMOB86-1"
+	"OnUser3" "!selfDisplay86.01-1"
+	"OnUser3" "!selfSetTexts33 m0 :REMIT BMOB87-1"
+	"OnUser3" "!selfDisplay87.01-1"
+	"OnUser3" "!selfSetTexts23 m0 :REMIT BMOB88-1"
+	"OnUser3" "!selfDisplay88.01-1"
+	"OnUser3" "!selfSetTexts13 m0 :REMIT BMOB89-1"
+	"OnUser3" "!selfDisplay89.01-1"
+	"OnUser3" "!selfSetTexts03 m0 :REMIT BMOB90-1"
+	"OnUser3" "!selfDisplay90.01-1"
+	"OnUser3" "!selfSetTexts92 m0 :REMIT BMOB91-1"
+	"OnUser3" "!selfDisplay91.01-1"
+	"OnUser3" "!selfSetTexts82 m0 :REMIT BMOB92-1"
+	"OnUser3" "!selfDisplay92.01-1"
+	"OnUser3" "!selfSetTexts72 m0 :REMIT BMOB93-1"
+	"OnUser3" "!selfDisplay93.01-1"
+	"OnUser3" "!selfSetTexts62 m0 :REMIT BMOB94-1"
+	"OnUser3" "!selfDisplay94.01-1"
+	"OnUser3" "!selfSetTexts52 m0 :REMIT BMOB95-1"
+	"OnUser3" "!selfDisplay95.01-1"
+	"OnUser3" "!selfSetTexts42 m0 :REMIT BMOB96-1"
+	"OnUser3" "!selfDisplay96.01-1"
+	"OnUser3" "!selfSetTexts32 m0 :REMIT BMOB97-1"
+	"OnUser3" "!selfDisplay97.01-1"
+	"OnUser3" "!selfSetTexts22 m0 :REMIT BMOB98-1"
+	"OnUser3" "!selfDisplay98.01-1"
+	"OnUser3" "!selfSetTexts12 m0 :REMIT BMOB99-1"
+	"OnUser3" "!selfDisplay99.01-1"
+	"OnUser3" "!selfSetTexts02 m0 :REMIT BMOB100-1"
+	"OnUser3" "!selfDisplay100.01-1"
+	"OnUser3" "!selfSetTexts91 m0 :REMIT BMOB101-1"
+	"OnUser3" "!selfDisplay101.01-1"
+	"OnUser3" "!selfSetTexts81 m0 :REMIT BMOB102-1"
+	"OnUser3" "!selfDisplay102.01-1"
+	"OnUser3" "!selfSetTexts71 m0 :REMIT BMOB103-1"
+	"OnUser3" "!selfDisplay103.01-1"
+	"OnUser3" "!selfSetTexts61 m0 :REMIT BMOB104-1"
+	"OnUser3" "!selfDisplay104.01-1"
+	"OnUser3" "!selfSetTexts51 m0 :REMIT BMOB105-1"
+	"OnUser3" "!selfDisplay105.01-1"
+	"OnUser3" "!selfSetTexts41 m0 :REMIT BMOB106-1"
+	"OnUser3" "!selfDisplay106.01-1"
+	"OnUser3" "!selfSetTexts31 m0 :REMIT BMOB107-1"
+	"OnUser3" "!selfDisplay107.01-1"
+	"OnUser3" "!selfSetTexts21 m0 :REMIT BMOB108-1"
+	"OnUser3" "!selfDisplay108.01-1"
+	"OnUser3" "!selfSetTexts11 m0 :REMIT BMOB109-1"
+	"OnUser3" "!selfDisplay109.01-1"
+	"OnUser3" "!selfSetTexts01 m0 :REMIT BMOB110-1"
+	"OnUser3" "!selfDisplay110.01-1"
+	"OnUser3" "!selfSetTexts9 m0 :REMIT BMOB111-1"
+	"OnUser3" "!selfDisplay111.01-1"
+	"OnUser3" "!selfSetTexts8 m0 :REMIT BMOB112-1"
+	"OnUser3" "!selfDisplay112.01-1"
+	"OnUser3" "!selfSetTexts7 m0 :REMIT BMOB113-1"
+	"OnUser3" "!selfDisplay113.01-1"
+	"OnUser3" "!selfSetTexts6 m0 :REMIT BMOB114-1"
+	"OnUser3" "!selfDisplay114.01-1"
+	"OnUser3" "!selfSetTexts5 m0 :REMIT BMOB115-1"
+	"OnUser3" "!selfDisplay115.01-1"
+	"OnUser3" "!selfSetTexts4 m0 :REMIT BMOB116-1"
+	"OnUser3" "!selfDisplay116.01-1"
+	"OnUser3" "!selfSetTexts3 m0 :REMIT BMOB117-1"
+	"OnUser3" "!selfDisplay117.01-1"
+	"OnUser3" "!selfSetTexts2 m0 :REMIT BMOB118-1"
+	"OnUser3" "!selfDisplay118.01-1"
+	"OnUser3" "!selfSetTexts1 m0 :REMIT BMOB119-1"
+	"OnUser3" "!selfDisplay119.01-1"
+	"OnUser3" "!selfSetTexts0 m0 :REMIT BMOB120-1"
+	"OnUser3" "!selfDisplay120.01-1"
+}
+
+modify:
+{
+	match:
+	{
+		"classname" "trigger_once"
+		"targetname" "trigger_n_m"
+	}
+	insert:
+	{
+		"OnStartTouch" "BombTimer*Kill01"
+	}
+}
+modify:
+{
+	match:
+	{
+		"classname" "trigger_once"
+		"targetname" "trigger_n_d"
+	}
+	insert:
+	{
+		"OnStartTouch" "BombTimer*Kill01"
+	}
+}
+modify:
+{
+	match:
+	{
+		"classname" "trigger_once"
+		"targetname" "trigger_n_e"
+	}
+	insert:
+	{
+		"OnStartTouch" "BombTimer*Kill01"
+	}
+}
+modify:
+{
+	match:
+	{
+		"classname" "trigger_once"
+		"targetname" "trigger_n_e2"
+	}
+	insert:
+	{
+		"OnStartTouch" "BombTimer*Kill01"
+		"OnStartTouch" "!activatorAddOutputOnUser3 BonusSpeed_Winner:Trigger::0:-10-1"
+	}
+}
+
+
+
+filter:
+{
+	"targetname" "lag_fix"
+	"classname" "logic_relay"
+}
+
+add:
+{
+	"origin" "-10880 4410 128"
+	"targetname" "BonusSpeed_Winner"
+	"StartDisabled" "1"
+	"spawnflags" "2"
+	"classname" "logic_relay"
+	"OnTrigger" "!activatorAddOutputrendercolor 255 0 00-1"
+	"OnTrigger" "!activatorAddOutputhealth 300000-1"
+	"OnTrigger" "speedModifySpeed1.30-1"
+}
+
+modify:
+{
+	match:
+	{
+		"targetname" "especial"
+		"classname" "trigger_multiple"
+		"origin" "-436.6 -752 137"
+	}
+	replace:
+	{
+		"StartDisabled" "1"
+	}
+	delete:
+	{
+		"OnStartTouch" "speedModifySpeed1.30-1"
+		"OnStartTouch" "!activatorAddOutputrendercolor 255 0 00-1"
+		"OnStartTouch" "!activatorAddOutputhealth 300000-1"
+		"filtername" "thebeast"
+	}
+	insert:
+	{
+		"OnStartTouch" "!activatorFireUser30-1"
+	}
+}
